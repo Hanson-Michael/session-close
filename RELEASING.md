@@ -1,25 +1,28 @@
 # Releasing Session Close
 
-## One-time setup (not done yet for this project)
+## One-time setup
 
-Before the first release, three things need doing that Session Prep already
-has and Session Close doesn't yet:
-
-1. **Generate a Sparkle signing keypair** for this app — it cannot reuse
-   Session Prep's key. Find `generate_keys` the same way Session Prep's
-   README describes:
-   ```
-   find ~/Library/Developer/Xcode/DerivedData -name "generate_keys" -type f 2>/dev/null | head -1
-   /path/to/generate_keys
-   ```
-   It stores the private key in your login Keychain and prints the public
-   key — paste that into `SUPublicEDKey` in both `Session-Close-Info.plist`
-   and the Xcode project's `INFOPLIST_KEY_SUPublicEDKey` build setting
-   (currently both hold the placeholder
-   `REPLACE_WITH_SESSION_CLOSE_SPARKLE_PUBLIC_KEY`).
+1. **Sparkle signing key — done, shared with Session Prep.** Deliberate
+   choice (not an oversight): Sparkle 2.x's `generate_keys` tool assumes one
+   key per Mac by default (stored under a single generic Keychain item),
+   not one per app, and per-app isolation would mean manually
+   exporting/importing keys in and out of Keychain before every release of
+   either app. Given neither app is a high-value target and the actual
+   failure mode of sharing (a stolen key compromises every app trusting it
+   at once, requiring a coordinated rotation) is an acceptable tradeoff for
+   a solo/hobbyist release cadence, both apps use the same EdDSA key:
+   `GLhkauDztD78r7uUzKZIgqj95cEUGFSAfUqCj8xnBD8=` — already set as
+   `SUPublicEDKey` in `Session-Close-Info.plist`, `Packaging/Info.plist`,
+   and both Xcode build configs' `INFOPLIST_KEY_SUPublicEDKey`. This is
+   safe to share: each app only ever checks its own `SUFeedURL`, so sharing
+   the signing key doesn't let either app see or install the other's
+   updates — it only means the same private key (in Session Prep's
+   Keychain-resident copy) is what signs releases for both. No swapping
+   needed between releasing one app vs. the other.
 2. **Create the GitHub repo** (`Hanson-Michael/session-close`, matching the
    URL already wired into `SUFeedURL` — update that key in both places if
-   you use a different repo name) and push this project to it.
+   you use a different repo name) and push this project to it. Done — see
+   https://github.com/Hanson-Michael/session-close.
 3. **Store notarization credentials** under a Session-Close-specific
    keychain profile:
    ```

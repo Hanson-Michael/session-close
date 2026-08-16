@@ -61,11 +61,10 @@ are to need adjustment:
   catalog slots are already wired up (`ASSETCATALOG_COMPILER_APPICON_NAME`
   in the project build settings, `Image("WatermarkMark")` in ContentView's
   empty state).
-- **Sparkle signing key** — `SUPublicEDKey` is a placeholder
-  (`REPLACE_WITH_SESSION_CLOSE_SPARKLE_PUBLIC_KEY`) in both
-  `Session-Close-Info.plist` and the Xcode project's build settings.
-  Session Close needs its own keypair — it can't reuse Session Prep's. See
-  `RELEASING.md` for how to generate one.
+- **Sparkle signing key** — done. `SUPublicEDKey` is set to a real key,
+  deliberately shared with Session Prep rather than a separate one — see
+  `RELEASING.md`'s "One-time setup" section for why that's an acceptable
+  tradeoff here.
 
 ## Open follow-ups (flagged, not forgotten)
 

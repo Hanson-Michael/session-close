@@ -152,7 +152,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_SUEnableAutomaticChecks = YES;
 				INFOPLIST_KEY_SUFeedURL = "https://raw.githubusercontent.com/Hanson-Michael/session-close/main/appcast.xml";
-				INFOPLIST_KEY_SUPublicEDKey = REPLACE_WITH_SESSION_CLOSE_SPARKLE_PUBLIC_KEY;
+				INFOPLIST_KEY_SUPublicEDKey = "GLhkauDztD78r7uUzKZIgqj95cEUGFSAfUqCj8xnBD8=";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
@@ -189,7 +189,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
 				INFOPLIST_KEY_SUEnableAutomaticChecks = YES;
 				INFOPLIST_KEY_SUFeedURL = "https://raw.githubusercontent.com/Hanson-Michael/session-close/main/appcast.xml";
-				INFOPLIST_KEY_SUPublicEDKey = REPLACE_WITH_SESSION_CLOSE_SPARKLE_PUBLIC_KEY;
+				INFOPLIST_KEY_SUPublicEDKey = "GLhkauDztD78r7uUzKZIgqj95cEUGFSAfUqCj8xnBD8=";
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.5;
