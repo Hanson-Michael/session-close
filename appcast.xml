@@ -28,6 +28,25 @@
         <language>en</language>
 
         <item>
+            <title>Version 26.8.151</title>
+            <sparkle:version>26.8.151</sparkle:version>
+            <sparkle:shortVersionString>26.8.151</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>No</li>
+                </ul>
+            ]]></description>
+            <pubDate>Sun, 16 Aug 2026 02:34:03 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.151/SessionClose-26.8.151.zip"
+                sparkle:edSignature="HjUb6bN+mX6nj9PyzQZPi1+pUrqL5BHtKpBa4+E77LovgmqxBSLO2QkeUA33j9D8vDyEe4nhxt7riRBocUyqBg=="
+                length="13384833"
+                type="application/octet-stream" />
+        </item>
+
+
+        <item>
             <title>Version 26.8.150</title>
             <sparkle:version>26.8.150</sparkle:version>
             <sparkle:shortVersionString>26.8.150</sparkle:shortVersionString>
