@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Not sandboxed — direct-distribution app updated via Sparkle, which needs
+  outgoing network access and (for the actual install step) to replace its
+  own app bundle, neither of which App Sandbox permits without Sparkle's
+  separate XPC helper services. No entitlements needed here as a result.
+-->
+<plist version="1.0">
+<dict/>
+</plist>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Reference copy only — the real Xcode target (Session Close.xcodeproj) generates
+  its own Info.plist from INFOPLIST_KEY_* build settings and does not read this
+  file directly. Keep these keys in sync with the build settings by hand if you
+  change one side.
+-->
+<plist version="1.0">
+<dict>
+	<key>CFBundleName</key>
+	<string>Session Close</string>
+	<key>CFBundleDisplayName</key>
+	<string>Session Close</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.mlhproductions.SessionClose</string>
+	<key>CFBundleShortVersionString</key>
+	<string>26.8.1</string>
+	<key>CFBundleVersion</key>
+	<string>26.8.1</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>13.5</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>© Michael Hanson</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>Session Close needs access to scan the album folder you select.</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.music</string>
+	<key>SUFeedURL</key>
+	<string>https://raw.githubusercontent.com/Hanson-Michael/session-close/main/appcast.xml</string>
+	<key>SUPublicEDKey</key>
+	<string>REPLACE_WITH_SESSION_CLOSE_SPARKLE_PUBLIC_KEY</string>
+</dict>
+</plist>
