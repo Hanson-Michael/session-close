@@ -27,5 +27,24 @@
         <description>Update feed for Session Close.</description>
         <language>en</language>
 
+        <item>
+            <title>Version 26.8.150</title>
+            <sparkle:version>26.8.150</sparkle:version>
+            <sparkle:shortVersionString>26.8.150</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>And So It Begins!</li>
+                </ul>
+            ]]></description>
+            <pubDate>Sun, 16 Aug 2026 01:54:58 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.150/SessionClose-26.8.150.zip"
+                sparkle:edSignature="sNTcJF2arc+32Tr6bzhvGZS/EvAN3nONBw43dR/6EyafVqzfsvvNsrnlfYITvYnX9VlUmkpxndc8GaVjEwhIBA=="
+                length="13382777"
+                type="application/octet-stream" />
+        </item>
+
+
     </channel>
 </rss>
