@@ -28,6 +28,32 @@
         <language>en</language>
 
         <item>
+            <title>Version 26.8.160</title>
+            <sparkle:version>26.8.160</sparkle:version>
+            <sparkle:shortVersionString>26.8.160</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Process Selected: Original Files (default) switched to Leave In Place</li>
+                    <li>Spectrum Window Curve Smoothing</li>
+                    <li>Batch Average show/hide separated from show/hide All Traces</li>
+                    <li>Spectrum Window: adjustments to y-axis (fixed states for pink v white)</li>
+                    <li>Align to 1kHz redesigned to anchor the Batch Average (BA) and scale y-axis +/-dB</li>
+                    <li>Spectrum Window: Crosshair and cursor readout showing Hz | Musical Note | dB ... (dB) shows difference from BA</li>
+                    <li>Main Window column reorder</li>
+                    <li>Main Window adding LRA to standard view</li>
+                </ul>
+            ]]></description>
+            <pubDate>Mon, 17 Aug 2026 05:31:47 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.160/SessionClose-26.8.160.zip"
+                sparkle:edSignature="UX4+uu7c054IXEYZduqJuhjr+f+7o/L3peHQGHT+dPtEI3ICG02eeXRaOMIyfrL5mLzbvAoXbh2TsfvlsAM3BA=="
+                length="13533902"
+                type="application/octet-stream" />
+        </item>
+
+
+        <item>
             <title>Version 26.8.153</title>
             <sparkle:version>26.8.153</sparkle:version>
             <sparkle:shortVersionString>26.8.153</sparkle:shortVersionString>
