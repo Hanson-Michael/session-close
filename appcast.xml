@@ -28,6 +28,26 @@
         <language>en</language>
 
         <item>
+            <title>Version 26.8.181</title>
+            <sparkle:version>26.8.181</sparkle:version>
+            <sparkle:shortVersionString>26.8.181</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Rename your App in your Applications folder to Cohezion!!!</li>
+                    <li>I'm too lazy to build a pkg file to do it all for you!</li>
+                </ul>
+            ]]></description>
+            <pubDate>Thu, 20 Aug 2026 05:47:07 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.181/Cohezion-26.8.181.zip"
+                sparkle:edSignature="DS5XLtP1f0Lq/bQISEFw1Y3O2Fao01ON1L/7+E8G03OmxSFnCyz1k42fLHn6RZunEeYNjSV+f3sBdEJpp5vEBA=="
+                length="7812369"
+                type="application/octet-stream" />
+        </item>
+
+
+        <item>
             <title>Version 26.8.160</title>
             <sparkle:version>26.8.160</sparkle:version>
             <sparkle:shortVersionString>26.8.160</sparkle:shortVersionString>
