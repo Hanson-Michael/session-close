@@ -25,3 +25,4 @@ xcuserdata/
 # Packaging / release artifacts (rebuilt fresh each release, not source)
 Packaging/build/
 *.zip
+Reference Files/

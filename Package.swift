@@ -2,7 +2,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "SessionClose",
+    name: "Cohezion",
     platforms: [
         .macOS(.v13) // Table view (used in ContentView) requires macOS 13+
     ],
@@ -11,11 +11,11 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "SessionClose",
+            name: "Cohezion",
             dependencies: [
                 .product(name: "Sparkle", package: "Sparkle")
             ],
-            path: "Sources/SessionClose"
+            path: "Sources/Cohezion"
         )
     ]
 )

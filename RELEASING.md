@@ -1,4 +1,4 @@
-# Releasing Session Close
+# Releasing Cohezion
 
 ## One-time setup
 
@@ -23,11 +23,11 @@
    URL already wired into `SUFeedURL` — update that key in both places if
    you use a different repo name) and push this project to it. Done — see
    https://github.com/Hanson-Michael/session-close.
-3. **Store notarization credentials** under a Session-Close-specific
-   keychain profile:
-   ```
-   xcrun notarytool store-credentials "session-close-notary"
-   ```
+3. **Store notarization credentials** under this project's keychain
+   profile — done, stored as `session-close-notary` via Apple ID +
+   app-specific password (kept under its original name after the
+   Session Close → Cohezion rename; the credential itself was never
+   recreated).
 
 ## Quick path (once the above is done)
 
@@ -58,7 +58,7 @@ Reference values for this project:
 
 ### 1. Bump the version
 
-Xcode → **Session Close** target → **General** tab → set **Version** and
+Xcode → **Cohezion** target → **General** tab → set **Version** and
 **Build** to the same `YY.MM.Dxx` value.
 
 ### 2. Archive and export a Developer ID build
@@ -70,21 +70,21 @@ Distribution** (not App Store Connect).
 
 ```
 cd /path/to/export/folder
-ditto -c -k --keepParent "Session Close.app" "SessionClose-26.8.1.zip"
+ditto -c -k --keepParent "Cohezion.app" "Cohezion-26.8.1.zip"
 ```
 
 ### 4. Notarize
 
 ```
-xcrun notarytool submit "SessionClose-26.8.1.zip" --keychain-profile "session-close-notary" --wait
+xcrun notarytool submit "Cohezion-26.8.1.zip" --keychain-profile "session-close-notary" --wait
 ```
 
 ### 5. Staple the ticket
 
 ```
-unzip "SessionClose-26.8.1.zip" -d staple-tmp
-xcrun stapler staple "staple-tmp/Session Close.app"
-ditto -c -k --keepParent "staple-tmp/Session Close.app" "SessionClose-26.8.1.zip"
+unzip "Cohezion-26.8.1.zip" -d staple-tmp
+xcrun stapler staple "staple-tmp/Cohezion.app"
+ditto -c -k --keepParent "staple-tmp/Cohezion.app" "Cohezion-26.8.1.zip"
 rm -rf staple-tmp
 ```
 
@@ -92,7 +92,7 @@ rm -rf staple-tmp
 
 ```
 find ~/Library/Developer/Xcode/DerivedData -name "sign_update" -type f 2>/dev/null | head -1
-/path/to/sign_update "SessionClose-26.8.1.zip"
+/path/to/sign_update "Cohezion-26.8.1.zip"
 ```
 
 Copy the printed `sparkle:edSignature="..."` and `length="..."` values.
@@ -119,7 +119,7 @@ takes the first as latest):
     ]]></description>
     <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
     <enclosure
-        url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.1/SessionClose-26.8.1.zip"
+        url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.1/Cohezion-26.8.1.zip"
         sparkle:edSignature="PASTE_FROM_STEP_6"
         length="PASTE_FROM_STEP_6"
         type="application/octet-stream" />
@@ -129,7 +129,7 @@ takes the first as latest):
 ### 9. Push
 
 ```
-cd "/Users/michaelhanson/Documents/Xcode/Session Close"
+cd "/Users/michaelhanson/Documents/Xcode/Cohezion"
 git add appcast.xml
 git commit -m "Release 26.8.1"
 git push

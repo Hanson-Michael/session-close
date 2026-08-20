@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Sparkle update feed for Session Close, tracked in the repo and served raw
+  Sparkle update feed for Cohezion, tracked in the repo and served raw
   at https://raw.githubusercontent.com/Hanson-Michael/session-close/main/appcast.xml
   (see SUFeedURL in Info.plist / project.pbxproj build settings).
 
@@ -22,9 +22,9 @@
 -->
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
     <channel>
-        <title>Session Close</title>
+        <title>Cohezion</title>
         <link>https://raw.githubusercontent.com/Hanson-Michael/session-close/main/appcast.xml</link>
-        <description>Update feed for Session Close.</description>
+        <description>Update feed for Cohezion.</description>
         <language>en</language>
 
         <item>

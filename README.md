@@ -1,4 +1,4 @@
-# Session Close
+# Cohezion
 
 Sibling app to Session Prep — pairs as a bookend: Prep going into a mix,
 Close going out of one. Drop a folder of finished songs in, measure Integrated
@@ -9,11 +9,11 @@ project's knowledge folder) for the full design spec this was built from.
 
 ## Opening this in Xcode
 
-The real app lives in **`Session Close.xcodeproj`** — open that (not
+The real app lives in **`Cohezion.xcodeproj`** — open that (not
 `Package.swift`) to build and run:
 
-1. Open `Session Close.xcodeproj` in Xcode.
-2. Pick the **Session Close** scheme and "My Mac" as the destination.
+1. Open `Cohezion.xcodeproj` in Xcode.
+2. Pick the **Cohezion** scheme and "My Mac" as the destination.
 3. Hit **Run** (⌘R).
 
 The Xcode project already has code signing, App Sandbox settings, and its
@@ -23,7 +23,7 @@ you're building under a different Apple Developer team, update
 `DEVELOPMENT_TEAM` in the project's build settings and `Scripts/
 ExportOptions.plist` first.
 
-`Package.swift` and `Sources/SessionClose/` are a secondary, reference-only
+`Package.swift` and `Sources/Cohezion/` are a secondary, reference-only
 mirror of the same source kept in sync for diffing purposes; they aren't
 part of the shipped app and don't need to be opened to build or run it.
 

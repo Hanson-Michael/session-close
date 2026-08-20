@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 #
-# End-to-end release script for Session Close. Reads the version/build
+# End-to-end release script for Cohezion. Reads the version/build
 # straight from the Xcode project (bump those in Xcode's General tab
 # *before* running this), then archives, exports, zips, notarizes, staples,
 # signs for Sparkle, publishes a GitHub Release, writes the appcast.xml
@@ -11,22 +11,28 @@
 #   - GitHub CLI installed and authenticated: brew install gh && gh auth login
 #   - Notarization credentials stored: xcrun notarytool store-credentials
 #     "session-close-notary"
-#   - Sparkle signing key generated for THIS app (not Session Prep's)
+#   - Sparkle signing key generated (shared with Session Prep — see
+#     RELEASING.md "One-time setup" for why)
 #
 # Usage: Scripts/release.sh
 
 set -euo pipefail
 
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-PROJECT="$REPO_ROOT/Session Close.xcodeproj"
+PROJECT="$REPO_ROOT/Cohezion.xcodeproj"
 PBXPROJ="$PROJECT/project.pbxproj"
-SCHEME="Session Close"
-BUNDLE_NAME="Session Close"
+SCHEME="Cohezion"
+BUNDLE_NAME="Cohezion"
+# Deliberately still the old repo/keychain names — Sparkle's appcast URL and
+# the notarization credential were never renamed (bundle ID also stays
+# com.mlhproductions.SessionClose), so existing installs keep updating
+# correctly. Only rename these if you also rename the GitHub repo and
+# re-run `xcrun notarytool store-credentials` under a new profile name.
 GITHUB_REPO="Hanson-Michael/session-close"
 NOTARY_PROFILE="session-close-notary"
 EXPORT_OPTIONS="$REPO_ROOT/Scripts/ExportOptions.plist"
 BUILD_DIR="$REPO_ROOT/.release-build"
-ARCHIVE_PATH="$BUILD_DIR/SessionClose.xcarchive"
+ARCHIVE_PATH="$BUILD_DIR/Cohezion.xcarchive"
 EXPORT_PATH="$BUILD_DIR/export"
 
 log() { printf '\n\033[1m== %s ==\033[0m\n' "$1"; }
@@ -42,7 +48,7 @@ MIN_OS=$(grep -m1 'MACOSX_DEPLOYMENT_TARGET = ' "$PBXPROJ" | sed -E 's/.*MACOSX_
 
 [[ "$VERSION" == "$BUILD" ]] || die "Version ($VERSION) and Build ($BUILD) don't match — set both to the same value in Xcode's General tab before releasing."
 
-ZIP_NAME="SessionClose-${VERSION}.zip"
+ZIP_NAME="Cohezion-${VERSION}.zip"
 TAG="v${VERSION}"
 
 log "Release plan"
