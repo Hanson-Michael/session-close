@@ -28,6 +28,27 @@
         <language>en</language>
 
         <item>
+            <title>Version 26.8.202</title>
+            <sparkle:version>26.8.202</sparkle:version>
+            <sparkle:shortVersionString>26.8.202</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.5</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Compensated playback button ... default to suggested gain.</li>
+                    <li>1/3- vs 1/12-oct spectrum display option.</li>
+                    <li>True Peak OVER counts, triggered at 0.0dBTP, column added.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Fri, 21 Aug 2026 04:09:32 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.8.202/Cohezion-26.8.202.zip"
+                sparkle:edSignature="7OqdSSjzqzushYLZV3yyOQYroCG8Ft1+h85OhybzwJIdlf2WDNT0Ru7Ys0Koaq/fPM9z4FAD2jmUo6ZUq5m8Bg=="
+                length="7845928"
+                type="application/octet-stream" />
+        </item>
+
+
+        <item>
             <title>Version 26.8.201</title>
             <sparkle:version>26.8.201</sparkle:version>
             <sparkle:shortVersionString>26.8.201</sparkle:shortVersionString>
