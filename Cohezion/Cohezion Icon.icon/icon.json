@@ -1,0 +1,73 @@
+{
+  "features" : [
+    "refractivity"
+  ],
+  "fill" : {
+    "linear-gradient" : [
+      "display-p3:0.01805,0.25920,0.00000,1.00000",
+      "display-p3:0.18820,0.00000,0.19621,1.00000"
+    ]
+  },
+  "groups" : [
+    {
+      "blur-material" : null,
+      "hidden-specializations" : [
+        {
+          "idiom" : "macOS",
+          "value" : false
+        }
+      ],
+      "layers" : [
+        {
+          "glass" : true,
+          "hidden" : false,
+          "image-name" : "Cohezion_8bit.png",
+          "name" : "Cohezion_8bit",
+          "opacity-specializations" : [
+            {
+              "appearance" : "dark",
+              "value" : 0.7
+            }
+          ],
+          "position-specializations" : [
+            {
+              "idiom" : "macOS",
+              "value" : {
+                "scale" : 1.12,
+                "translation-in-points" : [
+                  0,
+                  0
+                ]
+              }
+            }
+          ]
+        }
+      ],
+      "opacity-specializations" : [
+        {
+          "appearance" : "dark",
+          "value" : 1
+        }
+      ],
+      "refractivity" : {
+        "depth" : 0,
+        "enabled" : true,
+        "strength" : 0
+      },
+      "shadow" : {
+        "kind" : "none",
+        "opacity" : 0.5
+      },
+      "specular" : true,
+      "translucency" : {
+        "enabled" : false,
+        "value" : 0
+      }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [
+      "macOS"
+    ]
+  }
+}
