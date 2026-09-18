@@ -28,6 +28,25 @@
         <language>en</language>
 
         <item>
+            <title>Version 26.9.611</title>
+            <sparkle:version>26.9.611</sparkle:version>
+            <sparkle:shortVersionString>26.9.611</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>Minor updates.</li>
+                </ul>
+            ]]></description>
+            <pubDate>Fri, 18 Sep 2026 03:23:23 +0000</pubDate>
+            <enclosure
+                url="https://github.com/Hanson-Michael/session-close/releases/download/v26.9.611/Cohezion-26.9.611.zip"
+                sparkle:edSignature="bXZpW57fAcYO2JdYgcz/sSWfmGP3d86KlznezkHyowi6450chTSAbsFig6a1QzN4JilR21Ug4cZkCD69vS9iCg=="
+                length="7524628"
+                type="application/octet-stream" />
+        </item>
+
+
+        <item>
             <title>Version 26.9.207</title>
             <sparkle:version>26.9.207</sparkle:version>
             <sparkle:shortVersionString>26.9.207</sparkle:shortVersionString>
