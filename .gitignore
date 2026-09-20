@@ -26,3 +26,6 @@ xcuserdata/
 Packaging/build/
 *.zip
 Reference Files/
+
+# Do Not Use: archived docs, references, and Claude outputs (not part of the app)
+zDNU/
